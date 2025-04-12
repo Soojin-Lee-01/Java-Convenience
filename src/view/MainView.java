@@ -26,16 +26,19 @@ public class MainView {
 
             int number = Integer.parseInt(scanner.nextLine());
 
-            if (number == 1) {
-                adminView();
-            } else if (number == 2) {
-                customerView();
-            } else if (number == 3) {
-                System.out.println("안녕히가세요 :)");
-                break;
-            } else {
-                System.out.println("유효하지 않은 숫자입니다. 종료합니다. :( ");
-                return;
+            switch (number) {
+                case 1:
+                    adminView();
+                    break;
+                case 2:
+                    customerView();
+                    break;
+                case 3:
+                    System.out.println("안녕히가세요 :)");
+                    return;
+                default:
+                    System.out.println("유효하지 않은 숫자입니다. 종료합니다. :(");
+                    return;
             }
         }
     }
