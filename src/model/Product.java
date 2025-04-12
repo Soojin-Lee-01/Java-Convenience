@@ -21,11 +21,12 @@ public class Product {
         this.productType = productType;
     }
 
+    // Product객체를 파일 문자열로 변환
     public String toFileString() {
         return productName + "," + price + "," + productCount + "," + productType;
     }
 
-    // 파일 문자열 -> 객체로 변환
+    // 파일 문자열을 Product 객체로 변환
     public static Product fromFileString(String line) {
         String[] parts = line.split(",");
         String name = parts[0];

@@ -9,8 +9,7 @@ import java.util.List;
 
 /*
 * Product 싱글톤 객체
-* 파일에서 데이터 불러와 관리
-* 공통 instance
+* 파일에서 데이터 불러와 전역에서 사용하기 위해
 * */
 @Getter
 @Setter
